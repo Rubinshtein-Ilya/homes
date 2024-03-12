@@ -18,14 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = "Имя: $name\nТелефон: $phone";
 
     // Адрес почты, на который отправляем сообщение
-    $to = 'fahraziev-ilgiz@yandex.ru';
+    $to = 'some@yandex.ru';
 
     // Тема письма
     $subject = 'Заявка с сайта';
 
     // Дополнительные заголовки
-    $headers = 'From: fahraziev-ilgiz@yandex.ru' . "\r\n" .
-        'Reply-To: fahraziev-ilgiz@yandex.ru' . "\r\n" .
+    $headers = 'From: some@yandex.ru' . "\r\n" .
+        'Reply-To: some@yandex.ru' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
     // Отправляем сообщение на почту
